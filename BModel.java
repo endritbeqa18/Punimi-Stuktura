@@ -3,16 +3,8 @@ public class BModel
  private int[][] grid2;
  private String[] setOption={"Yourself","Random"};
  private String[] setAgain={"Yes","No"};
- /* kur ta inicializon anijen  i stohen ka 4 e e sheh ku e ki qit 
- e kur ta kryn i heket njo (bohet 4)e nuk shihet mo  e kur tja qellon i hiqen 1 kur ta prish komplet anijen i heket 
- edhe 1 e masne del kuq dmth e ki prish anijen komplet check anijen jon mi kqyr mes ka anije qaty  ose je ka e qet jasht fushes
- check shot e kqyr a ki gjujt qaty niher check carriershape e kqyr cfar forme check carrier e kqyr qysh je ka e qet 
- edhe set i shton ka 4 qasej fushe   *//*qito arrays duhen per mi dallu kur ja ki qellu e kur e ki prish komplet anijen
-          e ki edhe check metoden qe e kqyr a e ki prish a jo (e kqyr a ka ala 2 en qat array qe jo 
-          destoy array e prish qat anije e bon kuq mane qato fusha) */
  public int num;
- //inputin edhe outputin e jap si parametra se kur ti krijon en controller njana klas e pret tjetren mu ndertu
- // e krijohet future referencing qe nuk lejohet pasi qe nevojitet ni klass qe ende nuk eshte ndertu 
+
  
 
  public BModel(int num)
