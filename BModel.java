@@ -3,7 +3,7 @@ public class BModel
  private int[][] grid2;
  private String[] setOption={"Yourself","Random"};
  private String[] setAgain={"Yes","No"};
- public int num;
+ public int num;//madhesia e arrayit
 
  
 
