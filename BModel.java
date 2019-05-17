@@ -121,18 +121,16 @@ public int[][] getGrid2()
     continue;}}
     shipTypes[a].setShip(g,x,y,x2,y2,c);//vendos koordinatat ne array tqasaj anije
     o.repaint();   }}
-   
    o.repaint();
    int p1=i.option(setAgain,"Would you like to set your ships again?");//e pyt lojtarin a don mi vendos prap anijet
    if(p1==0){remove_ONE_grid(i,o,g,shipTypes);//i hek anijet nese po edhe e thirr prap metoden
     set_ONE_grid(i,o,g,shipTypes);}
    else{}
-
-  
    afterSet(g);
    o.repaint();
   }
   
+ 
   private void set_ONE_grid_random(Input i,Output o,int[][] g,ShipMaker[] shipTypes)//i vendos anijet en ni array random
   {for (int a=0; a<shipTypes.length; a++) 
    {for(int c=0; c<shipTypes[a].getShipNum(); c++)
@@ -149,6 +147,7 @@ public int[][] getGrid2()
    o.repaint();
   }
 
+ 
   private void set_ONE_grid_Computer(Input i,Output o,int[][] g,ShipMaker[] shipTypes)
   {for (int a=0; a<shipTypes.length; a++)//komjuteri kur ti qet anijet i qet ne menyre  random po nuk e thirr  
    {for(int c=0; c<shipTypes[a].getShipNum(); c++)// repaint per mes mi pa lojtari ku jon
@@ -172,6 +171,7 @@ public int[][] getGrid2()
    else{set_ONE_grid_random(i,o,grid2,shipTypes2);}
   }
   
+ 
    public void setGridsComputer(Input i,Output o,ShipMaker[] shipTypes1,ShipMaker[] shipTypes2)
   {int p1=i.option(setOption,"Player how would you like to set your ships");
    if(p1==0){set_ONE_grid(i,o,grid1,shipTypes1);}//e pyt lojtarin si pe don mi vendos anijet 
