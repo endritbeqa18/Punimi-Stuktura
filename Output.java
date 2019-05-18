@@ -6,12 +6,14 @@ public class Output extends JPanel
  private int size;
  private int x;
  private int y;
+ private int num;
 
   public Output(BModel b,int frameSize,int size,int x,int y,String title)//krijon nje dritare grafike
   {this.b=b;
    this.size=size;
    this.x=x;
    this.y=y;
+   this.num=b.getNum();
    JFrame frame=new JFrame();
    frame.setSize(frameSize,frameSize);
    frame.setVisible(true);
@@ -34,7 +36,7 @@ public class Output extends JPanel
 
     private void gameStand(int size,int x,int y,Graphics pen)//i ngjyros dy grids
     {  gridStand(b.getGrid1(),size,x,y,pen);
-       gridStand(b.getGrid2(),size,x+b.num*size+80,y,pen);
+       gridStand(b.getGrid2(),size,x+num*size+80,y,pen);
         pen.setColor(Color.black);
        pen.drawString("If you don't want to play anymore type in quit",x,y+num*size+50);
     }
@@ -42,12 +44,12 @@ public class Output extends JPanel
   
    private void gridStand(int[][] g,int size,int x,int y,Graphics pen)//e ngjyros 1 grid
    {pen.setColor(Color.black);                      
-    pen.fillRect(x,y,b.num*size+2,b.num*size+2);    
-      for(int i=0; i<b.num; i++)                  
+    pen.fillRect(x,y,num*size+2,num*size+2);    
+      for(int i=0; i<num; i++)                  
       { pen.setColor(Color.black);                
         pen.drawString(""+(1+i),x+(int)((1.0/3+i)*size),y-size/3);//vizaton numrat
         pen.drawString(""+(1+i),x-size*2/3,y+(int)((2.0/3+i)*size));
-         for(int j=0; j<b.num; j++)
+         for(int j=0; j<num; j++)
          {
                      
             if(g[i][j]==1 || g[i][j]==4)//nese osht 1 ose 4 nuk ki gjujt aty munet mu kon anije ose uje(bardh)
