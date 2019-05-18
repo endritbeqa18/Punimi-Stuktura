@@ -35,6 +35,8 @@ public class Output extends JPanel
     private void gameStand(int size,int x,int y,Graphics pen)//i ngjyros dy grids
     {  gridStand(b.getGrid1(),size,x,y,pen);
        gridStand(b.getGrid2(),size,x+b.num*size+80,y,pen);
+        pen.setColor(Color.black);
+       pen.drawString("If you don't want to play anymore type in quit",x,y+num*size+50);
     }
   
   
