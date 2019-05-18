@@ -54,7 +54,8 @@ public class Controller
     } 
     o.repaint(); 
     if(i.option(playAgain,"Would you like to play again")==0){new Controller().playgame();}//e pyt a don me lujt prap                    
-   }
+    else{System.exit(0);}  
+ }
    
    
    public void playgameComputer()//metoda per loj kunder kompjuterit
@@ -79,7 +80,8 @@ public class Controller
     } 
     o.repaint(); 
     if(i.option(playAgain,"Would you like to play again")==0){new Controller().playgame();}//e pyt a don me lujt prap            
-   }
+    else{System.exit(0);}  
+ }
    
 }
 
