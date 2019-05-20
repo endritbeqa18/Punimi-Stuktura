@@ -14,14 +14,16 @@ public class Controller
                                                              japim madhesin numrin dhe emrin e anijeve */
  ShipMaker pt1 = new ShipMaker(b,2,1,"Pt");
  ShipMaker carrier1 = new ShipMaker(b,5,1,"Carrier");
- ShipMaker sub1= new ShipMaker(b,3,1,"Suubmarine");
- ShipMaker[] shipTypes1=new ShipMaker[]{sub1,battleship1,pt1,carrier1};
+ ShipMaker sub1= new ShipMaker(b,3,1,"Submarine");
+ ShipMaker destroyer1= new ShipMaker(b,3,1,"Destroyer");
+ ShipMaker[] shipTypes1=new ShipMaker[]{carrier1,battleship1,sub1,destroyer1,pt1};
  
  ShipMaker battleship2 = new ShipMaker(b,4,1,"Battleship");
  ShipMaker pt2 = new ShipMaker(b,2,1,"Pt");
  ShipMaker carrier2 = new ShipMaker(b,5,1,"Carrier");
- ShipMaker sub2= new ShipMaker(b,3,1,"Suubmarine");
- ShipMaker[] shipTypes2=new ShipMaker[]{sub2,battleship2,pt2,carrier2};
+ ShipMaker sub2= new ShipMaker(b,3,1,"Submarine");
+ ShipMaker destroyer2= new ShipMaker(b,3,1,"Destroyer");
+ ShipMaker[] shipTypes2=new ShipMaker[]{carrier2,battleship2,sub2,destroyer2,pt2};
  
  
  public void playgame()//e qet ni dritare mi pyet si don me lujt 1v1 ose kompjuter dhe si te vendos e thirr metoden
