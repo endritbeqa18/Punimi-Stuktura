@@ -6,9 +6,9 @@ public class Input
  
  public String getCoordinates(String s)//qel nje dritare te re dhe merr informata
  {String rez=j.showInputDialog(s);
-  if (rez.toLowerCase().equals("quit")){System.exit(0);}//nese nuk don me lujt shkruan quit
   if(rez==null || rez.length()<3 || rez.trim().length()>5){invalid("Input error");
                                                            return getCoordinates(s);}
+  if (rez.toLowerCase().equals("quit")){System.exit(0);}//nese nuk don me lujt shkruan quit
   if(!rez.matches("[0-9][0-9 ]*$") ){invalid("Input error");//pranon vetem numra dhe hapsira
                                                            return getCoordinates(s);}
   else{ rez=rez.trim();   
