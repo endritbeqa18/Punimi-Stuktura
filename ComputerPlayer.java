@@ -5,7 +5,6 @@ public class ComputerPlayer
    private int j=10;
    private int direction=0;
    private int length=0;
-   private boolean[] sorround=new boolean[]{true,true,true,true};
    int times=0;
    int timescon=0;
 
