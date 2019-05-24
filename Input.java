@@ -6,14 +6,20 @@ public class Input
  
  public String getCoordinates(String s)//qel nje dritare te re dhe merr informata
  {String rez=j.showInputDialog(s);
-  if(rez==null || rez.length()<3 || rez.trim().length()>5){invalid("Input error");
-                                                           return getCoordinates(s);}
+  
+  if(rez==null ){invalid("Input error");//shikon a eshte prek cancel apo x
+                   return getCoordinates(s);}
+  
+  rez=rez.trim();                                                         
+  if(rez.length()<3 || rez.length()>5){invalid("Input error");//shikon a jane ne rregull te dhenat
+                                       return getCoordinates(s);}   
+                                                                                                           
   if (rez.toLowerCase().equals("quit")){System.exit(0);}//nese nuk don me lujt shkruan quit
   if(!rez.matches("[0-9][0-9 ]*$") ){invalid("Input error");//pranon vetem numra dhe hapsira
                                                            return getCoordinates(s);}
   else{ rez=rez.trim();   
   return rez;}
- }    
+ }
  
  public int getx(String s)
  {String s1=s.trim();
