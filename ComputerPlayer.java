@@ -188,7 +188,8 @@ public class ComputerPlayer
       if(g[x][y]==3){this.i=x;
                      this.j=y;}
       for(int a=0; a<shipTypes.length; a++)
-      {shipTypes[a].shot(x,y);}
+      {shipTypes[a].shot(x,y);
+      shipTypes[a].destroyShipCheck(g);}
       }
       
    } 
